@@ -1,0 +1,24 @@
+{
+  "name": "pdx-tables",
+  "version": "0.0.1",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Base table styles for Predix Design Extension",
+  "main": "_base.tables.scss",
+  "keywords": [
+    "pdx",
+    "sass",
+    "tables"
+  ],
+  "license": "Apache 2",
+  "homepage": "https://github.sw.ge.com/jrogerson/pdx-tables.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
