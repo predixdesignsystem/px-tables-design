@@ -1,0 +1,43 @@
+table {
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid $gray;
+  padding-right: calculateRem(10px);
+  padding-left: calculateRem(10px);
+}
+
+.box--flush {
+  th, td {
+    &:first-child {
+      border-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+th {
+  @include inuit-font-size(12px);
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: $gray-dark;
+  background: $gray-lightest;
+}
+
+td {
+  padding-top: .8em;
+  padding-bottom: .8em;
+  color: $true-black;
+}
+
+th, td {
+  &:last-child {
+    text-align: center;
+  }
+}
