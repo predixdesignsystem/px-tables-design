@@ -12,7 +12,7 @@
     "tables"
   ],
   "license": "Apache 2",
-  "homepage": "https://github.sw.ge.com/jrogerson/pdx-tables.git",
+  "homepage": "git@github.sw.ge.com:jrogerson/pdx-tables.git",
   "private": true,
   "ignore": [
     "**/.*",
