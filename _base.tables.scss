@@ -1,11 +1,16 @@
 table {
+  table-layout: fixed;
   width: 100%;
+  @include media-query(lap-and-up) {
+    table-layout: auto;
+  }
 }
 
 th, td {
   border: 1px solid $gray;
   padding-right: calculateRem(10px);
   padding-left: calculateRem(10px);
+  word-wrap: break-word;
 }
 
 .box--flush {
