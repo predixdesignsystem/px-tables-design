@@ -1,4 +1,4 @@
 px-tables
 ==========
 
-Base table styles for Predix Experience
+Basic table styles for Predix Experience

@@ -4,8 +4,8 @@
   "authors": [
     "General Electric"
   ],
-  "description": "Base table styles for Predix Experience",
-  "main": "_base.tables.scss",
+  "description": "Basic table styles for Predix Experience",
+  "main": "_objects.tables.scss",
   "keywords": [
     "pdx",
     "sass",
