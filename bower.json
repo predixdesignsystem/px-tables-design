@@ -1,10 +1,10 @@
 {
-  "name": "pdx-tables",
+  "name": "px-tables",
   "version": "0.0.1",
   "authors": [
     "General Electric"
   ],
-  "description": "Base table styles for Predix Design Extension",
+  "description": "Base table styles for Predix Experience",
   "main": "_base.tables.scss",
   "keywords": [
     "pdx",
@@ -12,7 +12,7 @@
     "tables"
   ],
   "license": "Apache 2",
-  "homepage": "git@github.sw.ge.com:jrogerson/pdx-tables.git",
+  "homepage": "git://github.sw.ge.com/jrogerson/px-tables.git",
   "private": true,
   "ignore": [
     "**/.*",

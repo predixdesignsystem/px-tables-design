@@ -1,4 +1,4 @@
-pdx-tables
+px-tables
 ==========
 
-Base table styles for Predix Design Extension
+Base table styles for Predix Experience
