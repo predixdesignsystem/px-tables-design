@@ -4,8 +4,17 @@
   }
 }
 
+.table {
+  @include inuit-font-size(13px);
+  color: $true-black;
+}
+
 th, td {
   word-wrap: break-word;
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
 }
 
 .box--flush {
@@ -21,18 +30,25 @@ th, td {
   }
 }
 
-.table--cosy th {
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-
 th {
   @include inuit-font-size(12px);
-  font-weight: normal;
   text-align: left;
-  text-transform: uppercase;
-  color: $gray-dark;
   background: $gray-lightest;
+}
+
+.table--cells {
+  th {
+    border: 0;
+  }
+  tbody tr:first-child td {
+    border-top: 0;
+  }
+  td:first-child {
+    border-left: 0;
+  }
+  td:last-child {
+    border-right: 0;
+  }
 }
 
 td {
