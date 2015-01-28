@@ -20,5 +20,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "inuit-mixins": "0.2.3",
+    "inuit-responsive-tools": "~0.1.3",
+    "px-colors": "git://github.sw.ge.com/jrogerson/px-colors.git#master",
+    "inuit-tables": "~0.2.1"
+  }
 }
