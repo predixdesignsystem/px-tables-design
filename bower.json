@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "inuit-mixins": "0.2.3",
-    "inuit-responsive-tools": "~0.1.3",
+    "inuit-tables": "~0.2.1",
     "px-colors": "git://github.sw.ge.com/jrogerson/px-colors.git#master",
-    "inuit-tables": "~0.2.1"
+    "px-responsive-tools": "git://github.sw.ge.com/jrogerson/px-responsive-tools.git#master"
   }
 }
