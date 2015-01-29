@@ -4,7 +4,7 @@
 @import "lib/inuit-normalize/generic.normalize";
 @import "lib/inuit-responsive-settings/settings.responsive";
 @import "lib/inuit-responsive-tools/tools.responsive";
-@import "lib/px-colors/settings.colors";
+@import "lib/px-colors/sass/settings.colors";
 @import "lib/inuit-tables/objects.tables";
 
 @include media-query(lap-and-up) {
