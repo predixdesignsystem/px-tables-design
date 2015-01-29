@@ -1,3 +1,6 @@
+$inuit-enable-table--compact    : true;
+$inuit-enable-table--cells      : true;
+
 @import "lib/inuit-defaults/settings.defaults";
 @import "lib/px-colors/sass/settings.colors";
 @import "lib/inuit-responsive-settings/settings.responsive";
@@ -6,9 +9,6 @@
 @import "lib/px-responsive-tools/sass/tools.responsive";
 @import "lib/inuit-normalize/generic.normalize";
 @import "lib/inuit-tables/objects.tables";
-
-$inuit-enable-table--compact    : true;
-$inuit-enable-table--cells      : true;
 
 @if import-once('objects.tables') {
 
