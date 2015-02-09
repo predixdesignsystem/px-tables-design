@@ -1,5 +1,5 @@
 {
-  "name": "px-tables",
+  "name": "px-tables-design",
   "version": "0.0.1",
   "authors": [
     "General Electric"
@@ -12,7 +12,7 @@
     "tables"
   ],
   "license": "Apache 2",
-  "homepage": "git://github.sw.ge.com/jrogerson/px-tables.git",
+  "homepage": "git://github.sw.ge.com/pxc/px-tables-design.git",
   "private": true,
   "ignore": [
     "**/.*",
@@ -25,6 +25,6 @@
     "inuit-mixins": "~0.2.3",
     "inuit-responsive-tools": "~0.1.3",
     "inuit-tables": "~0.2.1",
-    "px-colors": "git://github.sw.ge.com/jrogerson/px-colors.git#master"
+    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master"
   }
 }
