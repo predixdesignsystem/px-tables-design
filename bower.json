@@ -25,6 +25,7 @@
     "inuit-mixins": "~0.2.3",
     "inuit-responsive-tools": "~0.1.3",
     "inuit-tables": "~0.2.1",
-    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master"
+    "px-colors-design": "git://github.sw.ge.com/pxc/px-colors-design.git#master",
+    "px-functions-design": "git://github.sw.ge.com/pxc/px-functions-design.git#master"
   }
 }
