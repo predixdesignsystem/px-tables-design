@@ -24,6 +24,6 @@
   "dependencies": {
     "inuit-defaults": "~0.2.0",
     "px-functions-design": "git://github.sw.ge.com/pxc/px-functions-design.git#master",
-    "px-normalize.css-design": "git://github.sw.ge.com/pxc/px-normalize.css-design.git#master"
+    "px-normalize-design": "git://github.sw.ge.com/pxc/px-normalize-design.git#master"
   }
 }
