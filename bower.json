@@ -2,7 +2,8 @@
   "name": "px-tables-design",
   "version": "0.0.1",
   "authors": [
-    "General Electric"
+    "General Electric",
+    "Harry Roberts <harry@csswizardry.com>"
   ],
   "description": "Basic table styles for Predix Experience",
   "main": "_objects.tables.scss",
