@@ -52,7 +52,7 @@ The following dimension (padding) variables can be customized:
 
 ## Options
 
-These options are available if the variable flags listed above are set to `true`:
+These classes are available if the variable flags listed above are set to `true`:
 
 * `.table--fixed`: force tables into having equal-width columns.
 * `.table--compact`: tables with very tightly packed cells.
