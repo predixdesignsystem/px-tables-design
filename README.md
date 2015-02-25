@@ -54,10 +54,10 @@ The following dimension (padding) variables can be customized:
 
 These classes are available if the variable flags listed above are set to `true`:
 
-* `.table--fixed`: force tables into having equal-width columns.
-* `.table--compact`: tables with very tightly packed cells.
-* `.table--cosy`: tables with lightly packed cells.
-* `.table--comfy`: tables with very widely padded cells.
-* `.table--cells`: add borders around a `table`.
-* `.table--rows`: add borders only to `table`’s rows.
-* `.table--columns`: add borders only to `table`’s columns.
+* `table--fixed`: force tables into having equal-width columns.
+* `table--compact`: tables with very tightly packed cells.
+* `table--cosy`: tables with lightly packed cells.
+* `table--comfy`: tables with very widely padded cells.
+* `table--cells`: add borders around a `table`.
+* `table--rows`: add borders only to `table`’s rows.
+* `table--columns`: add borders only to `table`’s columns.
