@@ -18,7 +18,9 @@ Install this module and its dependencies using bower:
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
-    @import "px-tables-design/sass/objects.tables";
+    @import "../px-tables-design/objects.tables";
+
+See [px-getting-started](https://github.sw.ge.com/pxc/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
 
 ## Import once
 
