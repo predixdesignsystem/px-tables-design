@@ -1,0 +1,18 @@
+th {
+  @include inuit-font-size(12px);
+  font-weight: normal;
+  text-align: $th-text-align;
+  text-transform: uppercase;
+  color: $th-color;
+  background: $th-background-color;
+}
+
+td {
+  color: $th-color;
+  text-align: center;
+}
+
+:host {
+  /*! This comment will stop cssmin munging this ruleset with body dec above and prevent safari borking on :host */
+  font-family: $table-font-family;
+}
