@@ -1,18 +1,27 @@
-th {
-  @include inuit-font-size(12px);
-  font-weight: normal;
-  text-align: $th-text-align;
-  text-transform: uppercase;
-  color: $th-color;
-  background: $th-background-color;
-}
+@import "../inuit-defaults/settings.defaults";
+@import "../px-functions-design/tools.functions";
 
-td {
-  color: $th-color;
-  text-align: center;
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-table-namespace          : $inuit-namespace !default;
+
+.#{$inuit-table-namespace}table {
+  th {
+    @include inuit-font-size(12px);
+    font-weight: normal;
+    text-align: $predix-th-text-align;
+    text-transform: uppercase;
+    color: $predix-th-color;
+    background: $predix-th-background-color;
+  }
+
+  td {
+    color: $predix-td-color;
+    text-align: center;
+  }
+
 }
 
 :host {
   /*! This comment will stop cssmin munging this ruleset with body dec above and prevent safari borking on :host */
-  font-family: $table-font-family;
+  font-family: $predix-table-font-family;
 }
