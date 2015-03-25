@@ -5,7 +5,7 @@
 $inuit-table-namespace          : $inuit-namespace !default;
 
 .#{$inuit-table-namespace}table {
-  th, .data-table-header {
+  th, .data-table__header-cell {
     @include inuit-font-size(12px);
     font-weight: normal;
     text-align: $predix-th-text-align;
@@ -14,7 +14,7 @@ $inuit-table-namespace          : $inuit-namespace !default;
     background: $predix-th-background-color;
   }
 
-  td, .data-table-body {
+  td, .data-table__body-cell {
     color: $predix-td-color;
     text-align: center;
   }
