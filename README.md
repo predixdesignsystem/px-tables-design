@@ -7,20 +7,20 @@ Predix Experience has some useful helpers for common `<table>` patterns. This mo
 Px's Tables module depends on three other Px and inuitcss modules:
 
 * [settings.defaults](https://github.com/inuitcss/settings.defaults)
-* [px-functions-design](https://github.sw.ge.com/pxc/px-functions-design)
-* [px-normalize-design](https://github.sw.ge.com/pxc/px-normalize-design)
+* [px-functions-design](https://github.sw.ge.com/PXd/px-functions-design)
+* [px-normalize-design](https://github.sw.ge.com/PXd/px-normalize-design)
 
 ## Installation
 
 Install this module and its dependencies using bower:
 
-    bower install --save https://github.sw.ge.com/pxc/px-tables-design.git
+    bower install --save https://github.sw.ge.com/PXd/px-tables-design.git
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
     @import "../px-tables-design/objects.tables";
 
-See [px-getting-started](https://github.sw.ge.com/pxc/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
+See [px-getting-started](https://github.sw.ge.com/PXd/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
 
 ## Import once
 
