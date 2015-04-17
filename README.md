@@ -6,7 +6,7 @@ Predix Experience has some useful helpers for common `<table>` patterns. This mo
 
 Px's Tables module depends on three other Px and inuitcss modules:
 
-* [settings.defaults](https://github.com/inuitcss/settings.defaults)
+* [px-defaults-design](https://github.sw.ge.com/PXd/px-defaults-design)
 * [px-functions-design](https://github.sw.ge.com/PXd/px-functions-design)
 * [px-normalize-design](https://github.sw.ge.com/PXd/px-normalize-design)
 
