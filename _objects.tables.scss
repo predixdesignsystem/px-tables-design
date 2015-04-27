@@ -13,8 +13,8 @@
 // Predefine the variables below in order to alter and enable specific features.
 $inuit-table-namespace          : $inuit-namespace !default;
 
-$inuit-table-padding--compact   : quarter($inuit-base-spacing-unit) !default;
-$inuit-table-padding--cosy      : halve($inuit-base-spacing-unit) !default;
+$inuit-table-padding--compact   : $inuit-base-spacing-unit--tiny !default;
+$inuit-table-padding--cosy      : $inuit-base-spacing-unit--small !default;
 $inuit-table-padding--comfy     : $inuit-base-spacing-unit !default;
 
 $inuit-table-border-width       : 1px !default;
