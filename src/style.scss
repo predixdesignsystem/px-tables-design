@@ -1,0 +1,26 @@
+$imported-once-files            : ();
+
+// Generic
+@import "../px-normalize-design/generic.normalize";
+@import "../px-box-sizing-design/generic.box-sizing";
+
+// Base
+@import "../px-viewport-design/base.viewport";
+@import "../px-typography-design/base.typography";
+@import "../px-code-design/base.code";
+
+// Table
+$inuit-enable-table--fixed      : true;
+$inuit-enable-table--small      : true;
+$inuit-enable-table--large      : true;
+$inuit-enable-table--rows       : true;
+$inuit-enable-table--columns    : true;
+$inuit-enable-table--no-cells   : true;
+
+@import "../base.tables";
+
+// Trumps
+$inuit-enable-margins--large    : true;
+$inuit-enable-margins--huge     : true;
+
+@import "../px-spacing-responsive-design/trumps.spacing-responsive";
