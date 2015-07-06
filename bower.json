@@ -1,6 +1,6 @@
 {
   "name": "px-tables-design",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -27,7 +27,9 @@
     "px-defaults-design": "https://github.build.ge.com/PXd/px-defaults-design.git#~0.2.0"
   },
   "devDependencies": {
+    "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.0",
     "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
+    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0",
     "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.0"
   }
 }
