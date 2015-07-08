@@ -14,12 +14,30 @@
         <p>
           To use this module, follow the instructions in the
           <a href=https://github.build.ge.com/PXd/px-tables-design>README</a>.
+          <!-- build:remove -->
+          (For background on PXd, read the
+          <a href=https://github.build.ge.com/PXd/px-getting-started>Getting Started</a>
+          documentation.)
+          <!-- /build -->
         </p>
         <a class=btn href=https://github.build.ge.com/PXd/px-tables-design>
           <i class="fa fa-github u-mr--"></i>
           px-tables-design
         </a>
       </div>
+      <h2>How to Use</h2>
+      <p>Install via command line:</p>
+      <figure class="code u-mb+">
+        <code>
+          bower install --save https://github.build.ge.com/PXd/px-tables-design.git
+        </code>
+      </figure>
+      <p>Add to component Sass file:</p>
+      <figure class="code u-mb++">
+        <code>
+          @import "px-tables-design/_base.tables.scss";
+        </code>
+      </figure>
       <h2>Regular table</h2>
       <figure class="code u-mb+">
         <code>
@@ -73,6 +91,18 @@
         </tr>
       </table>
       <h2>Equal column widths</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--fixed : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--fixed"&gt;
@@ -125,6 +155,18 @@
         </tr>
       </table>
       <h2>Small cells</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--small : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--small"&gt;
@@ -177,6 +219,18 @@
         </tr>
       </table>
       <h2>Large cells</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--large : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--large"&gt;
@@ -229,6 +283,18 @@
         </tr>
       </table>
       <h2>Horizontal borders only</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--rows : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--rows"&gt;
@@ -281,6 +347,18 @@
         </tr>
       </table>
       <h2>Vertical borders only</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--columns : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--columns"&gt;
@@ -333,6 +411,18 @@
         </tr>
       </table>
       <h2>No borders</h2>
+      <h3>Sass Flag</h3>
+      <figure class="code">
+        <code>
+          $inuit-enable-table--no-cells : true;
+        </code>
+      </figure>
+      <small>
+        Flag must be set before
+        <code class="code code--inline">@import</code>
+        in component Sass file.
+      </small>
+      <h3>HTML</h3>
       <figure class="code u-mb+">
         <code>
           &lt;table class="table table--no-cells"&gt;
