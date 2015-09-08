@@ -47,6 +47,9 @@ $inuit-enable-table--columns    : false !default;
       border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
       padding: $inuit-base-spacing-unit--small;
   }
+  th {
+    text-align: left;
+  }
 }
 
 
