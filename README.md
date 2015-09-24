@@ -2,13 +2,10 @@
 
 Predix Experience has some useful helpers for common `<table>` patterns. This module is a fork of the [inuitcss Table module](https://github.com/inuitcss/objects.tables).
 
-## Demo
 
-You can review list bare styles and recommended markup here: https://github.com/pages/PredixDev/px-tables-design
 
-## Sass Docs
 
-You can review Sass Documentation here: https://github.com/pages/PredixDev/px-tables-design/sassdoc
+
 
 ## Dependencies
 
