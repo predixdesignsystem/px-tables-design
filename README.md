@@ -1,15 +1,10 @@
 # Tables
 
-Predix Experience has some useful helpers for common `<table>` patterns. This module is a fork of the [inuitcss Table module](https://github.com/inuitcss/objects.tables).
-
-
-
-
-
+Predix UI has some useful helpers for common `<table>` patterns. This module is a fork of the [inuitcss Table module](https://github.com/inuitcss/objects.tables).
 
 ## Dependencies
 
-Px's Tables module depends on two other Px modules:
+Predix UI's Tables module depends on two other Px modules:
 
 * [px-colors-design](https://github.com/PredixDev/px-colors-design)
 * [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
@@ -18,9 +13,9 @@ Px's Tables module depends on two other Px modules:
 
 Install this module and its dependencies using bower:
 
-    bower install --save https://github.com/PredixDev/px-tables-design.git
+    bower install --save px-tables-design
 
-Once installed, `@import` into your project's Sass file in its Base layer:
+Once installed, `@import` into your project's Sass file in its **Base** layer:
 
     @import "px-tables-design/_base.tables.scss";
 
@@ -51,3 +46,5 @@ These classes are available if the variable flags listed above are set to `true`
 * `table--rows`: add borders only to `table`’s rows.
 * `table--columns`: add borders only to `table`’s columns.
 * `table--no-cells`: remove borders around a `table`.
+
+view the full API [here](http://predixdev.github.io/px-tables-design/sassdoc/)
