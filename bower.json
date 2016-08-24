@@ -12,7 +12,6 @@
     "sass",
     "tables"
   ],
-  "license": "Apache 2",
   "homepage": "https://github.com/PredixDev/px-tables-design.git",
   "private": false,
   "ignore": [
