@@ -1,3 +1,7 @@
+v0.3.15
+==============================
+* fix style modules and ghp
+
 v0.3.14
 ==============================
 * added new demo page and auto-ghp scripts
