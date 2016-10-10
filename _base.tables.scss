@@ -7,36 +7,57 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
-/// @type String [default] - Prepend value for all generated classes
+/// Prepend value for all generated classes
+/// @group px-tables-design:variables:style
+/// @type String [default]
 $inuit-table-namespace          : $inuit-namespace !default;
 
-/// @type Number [default] - Border width
+/// Border width
+/// @group px-tables-design:variables:style
+/// @type Number [default]
 $inuit-table-border-width       : 1px !default;
 
-/// @type String [default] - Border style
+/// Border style
+/// @group px-tables-design:variables:style
+/// @type String [default]
 $inuit-table-border-style       : solid !default;
 
-/// @type Color [default] - Border color
+/// Border color
+/// @group px-tables-design:variables:style
+/// @type Color [default]
 $inuit-table-border-color       : $gray4 !default;
 
-/// @type Boolean [default] - Produce CSS for tables with a fixed width?
+/// Enable tables with fixed width columns?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--fixed      : false !default;
 
-/// @type Boolean [default] - Produce CSS for tables cells with tiny padding?
+/// Enable tables with small cell padding?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--small      : false !default;
 
-/// @type Boolean [default] - Produce CSS for tables cells with small padding?
+/// Enable tables with large cell padding?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--large      : false !default;
 
-/// @type Boolean [default] - Produce CSS for borders around all cells?
+/// Enable tables with no borders?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--no-cells   : false !default;
 
-/// @type Boolean [default] - Produce CSS for borders only table rows?
+/// Enable tables with row borders but no column borders?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--rows       : false !default;
 
-/// @type Boolean [default] - Produce CSS for borders only table columns?
+/// Enable tables with column borders but no row borders?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
 $inuit-enable-table--columns    : false !default;
 
+/// Default table
 .#{$inuit-table-namespace}table,
 %#{$inuit-table-namespace}table {
   width: 100%;
@@ -52,27 +73,16 @@ $inuit-enable-table--columns    : false !default;
   }
 }
 
-
-
+/// Table with fixed column widths
 @if ($inuit-enable-table--fixed == true) {
-
-  /**
-   * Force tables into having equal-width columns.
-   */
   .#{$inuit-table-namespace}table--fixed,
   %#{$inuit-table-namespace}table--fixed {
       table-layout: fixed;
   }
-
 }
 
-
-
+/// Table with small padding / tightly packed cells
 @if ($inuit-enable-table--small == true) {
-
-  /**
-   * Tightly packed cells.
-   */
   .#{$inuit-table-namespace}table--small,
   %#{$inuit-table-namespace}table--small {
 
@@ -80,109 +90,67 @@ $inuit-enable-table--columns    : false !default;
       td {
           padding: $inuit-base-spacing-unit--tiny;
       }
-
   }
-
 }
 
-
-
-
-
+/// Table with large padding / widely spaced cells
 @if ($inuit-enable-table--large == true) {
-
-  /**
-   * Tables with widely padded cells.
-   */
   .#{$inuit-table-namespace}table--large,
   %#{$inuit-table-namespace}table--large {
-
       th,
       td {
           padding: $inuit-base-spacing-unit;
       }
-
   }
-
 }
 
-
-
-
+/// Table with no column borders, just row borders
 @if ($inuit-enable-table--rows == true) {
-
-  /**
-   * Add borders only to `table`’s rows.
-   */
   .#{$inuit-table-namespace}table--rows,
   %#{$inuit-table-namespace}table--rows {
-
       &,
       th,
       td {
           border: 0 $inuit-table-border-style $inuit-table-border-color;
       }
-
   }
-
   .#{$inuit-table-namespace}table--rows,
   %#{$inuit-table-namespace}table--rows {
       border-top-width: $inuit-table-border-width;
-
       th,
       td {
           border-bottom-width: $inuit-table-border-width;
       }
   }
-
 }
 
-
-
-
-
+/// Table with no row broders, just column borders
 @if ($inuit-enable-table--columns == true) {
-
-  /**
-   * Add borders only to `table`’s columns.
-   */
   .#{$inuit-table-namespace}table--columns,
   %#{$inuit-table-namespace}table--columns {
-
       &,
       th,
       td {
           border: 0 $inuit-table-border-style $inuit-table-border-color;
       }
   }
-
   .#{$inuit-table-namespace}table--columns,
   %#{$inuit-table-namespace}table--columns {
       border-left-width: $inuit-table-border-width;
-
       th,
       td {
           border-right-width: $inuit-table-border-width;
       }
   }
-
 }
 
-
-
+/// Table with no borders at all
 @if ($inuit-enable-table--no-cells == true) {
-
-  /**
-   * Remove borders around a `table`.
-   */
   .#{$inuit-table-namespace}table--no-cells,
   %#{$inuit-table-namespace}table--no-cells {
-
       th,
       td {
           border: 0;
       }
-
   }
-
 }

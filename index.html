@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>px-tables-design Demo</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Boilerplate: Import Libraries -->
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../px-theme/px-theme.html" />
+  <link rel="import" href="../px-sass-doc/px-sass-doc.html" />
+
+  <!-- 0: Import Module Styles -->
+  <link rel="stylesheet" type="text/css" href="css/px-tables-design-demo.css" />
+</head>
+<body>
+<template id="just-for-demo" is="dom-bind">
+
+<!-- 1: Describe Module -->
+<px-sass-doc
+  module-name="px-tables-design"
+  description="Predix UI has some useful helpers for common <table> patterns."
+  layer="base"
+  sassdoc-path="sassdoc.json"
+  dependencies='[
+    "https://github.com/PredixDev/px-colors-design",
+    "https://github.com/PredixDev/px-defaults-design"
+  ]'
+  selected-options="{{selectedOptions}}">
+
+<!-- 2: Set Options -->
+<px-sass-doc-option
+  option-name="Padding"
+  choose-with="dropdown"
+  choices='[
+    "small",
+    "regular (default)",
+    "large"
+  ]'
+  default-choice="regular (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Widths"
+  choose-with="dropdown"
+  choices='[
+    "variable (default)",
+    "fixed"
+  ]'
+  default-choice="regular (default)">
+</px-sass-doc-option>
+
+<px-sass-doc-option
+  option-name="Borders"
+  choose-with="dropdown"
+  choices='[
+    "all (default)",
+    "rows",
+    "columns",
+    "none"
+  ]'
+  default-choice="all (default)">
+</px-sass-doc-option>
+
+<!-- 3: Make HTML Demo -->
+<section data-slot="demoHTML">
+<table class$="{{tableClasses}}">
+  <tbody>
+    <tr>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+      <th>Table heading</th>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell wide</td>
+      <td>Table cell wide wide</td>
+      <td>Table cell wide wide wide</td>
+    </tr>
+    <tr>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+      <td>Table cell</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<!-- 4: Set Import Slot -->
+<section data-slot="import">
+{{importCode}}
+</section>
+
+<!-- 5: Set Usage HTML -->
+<section data-slot="usageHTML">
+<table class="table">
+  <tr>
+    <th>…</th>
+  </tr>
+  <tr>
+    <td>…</td>
+  </tr>
+</table>
+</section>
+
+</px-sass-doc>
+</template>
+
+<!-- 6: Handle selectedOptions, update demo -->
+<script>
+  var template = document.querySelector('template[is=dom-bind]');
+
+  document.addEventListener('px-sass-doc-options-updated', function(evt) {
+    template.tableClasses = template._tableClasses();
+    template.importCode = template._importCode();
+  });
+
+  template._tableClasses = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+
+    if (opts.Padding === "small")    strings.push("table--small");
+    if (opts.Padding === "large")    strings.push("table--large");
+    if (opts.Widths === "fixed")     strings.push("table--fixed");
+    if (opts.Borders === "rows")     strings.push("table--rows");
+    if (opts.Borders === "columns")  strings.push("table--columns");
+    if (opts.Borders === "none")     strings.push("table--no-cells");
+
+    return ("table " + strings.join(" ")).trim();
+  };
+
+  template._importCode = function() {
+    var opts = template.selectedOptions || {}, strings = [];
+
+    if (opts.Padding === "small")    strings.push("$inuit-enable-table--small : true;");
+    if (opts.Padding === "large")    strings.push("$inuit-enable-table--large : true;");
+    if (opts.Widths === "fixed")     strings.push("$inuit-enable-table--fixed : true;");
+    if (opts.Borders === "rows")     strings.push("$inuit-enable-table--rows : true;");
+    if (opts.Borders === "columns")  strings.push("$inuit-enable-table--columns : true;");
+    if (opts.Borders === "none")     strings.push("$inuit-enable-table--no-cells : true;");
+
+    return (strings.join("\n") + "\n@import 'px-tables-design/_base.tables.scss';").trim();
+  };
+</script>
+</body>
+</html>
