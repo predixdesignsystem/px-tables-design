@@ -38,7 +38,8 @@ cp bower.json ../tmp_bower/bower.json
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 
 #remove the old .bowerrc, and replace it with one that tells bower to install everything in THIS folder, and not bower_components
-rm .bowerrc
+# -f flag causes this to silently fail if .bowerrc doesn't exist
+rm -f .bowerrc
 echo "{ \"directory\": \".\" }" > .bowerrc
 
 #copy the bower.json file from our temp directory into the current one, overriding it, and passing a yes in there's a prompt
