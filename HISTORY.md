@@ -1,3 +1,8 @@
+v0.3.16
+==============================
+* Updated dependencies
+* Updated boilerplate files
+
 v0.3.15
 ==============================
 * fix style modules and ghp
