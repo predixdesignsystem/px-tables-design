@@ -1,36 +1,36 @@
 {
-  "name": "px-tables-design",
-  "version": "0.3.18",
-  "authors": [
-    "General Electric",
-    "Harry Roberts <harry@csswizardry.com>"
-  ],
-  "description": "Basic table styles for Predix UI",
-  "main": "_base.tables.scss",
-  "keywords": [
-    "px",
-    "sass",
-    "tables"
-  ],
-  "homepage": "https://github.com/PredixDev/px-tables-design.git",
-  "private": false,
-  "ignore": [
-    "**/.*",
-    "npm-debug.log",
-    "Gruntfile.js",
-    "node_modules",
-    "bower_components",
-    "OSS_Notice.pdf",
-    ".github",
-    "scripts",
-    "sassdoc.json"
-  ],
-  "dependencies": {
-    "px-colors-design": "~0.2.20",
-    "px-defaults-design": "~0.3.0"
-  },
-  "devDependencies": {
-    "px-sass-doc": "~0.2.4",
-    "px-starter-kit-design": "^0.6.0"
-  }
+    "name": "px-tables-design",
+    "version": "0.3.19",
+    "authors": [
+        "General Electric",
+        "Harry Roberts <harry@csswizardry.com>"
+    ],
+    "description": "Basic table styles for Predix UI",
+    "main": "_base.tables.scss",
+    "keywords": [
+        "px",
+        "sass",
+        "tables"
+    ],
+    "homepage": "https://github.com/PredixDev/px-tables-design.git",
+    "private": false,
+    "ignore": [
+        "**/.*",
+        "npm-debug.log",
+        "Gruntfile.js",
+        "node_modules",
+        "bower_components",
+        "OSS_Notice.pdf",
+        ".github",
+        "scripts",
+        "sassdoc.json"
+    ],
+    "dependencies": {
+        "px-colors-design": "~0.2.20",
+        "px-defaults-design": "~0.3.0"
+    },
+    "devDependencies": {
+        "px-sass-doc": "^0.2.9",
+        "px-starter-kit-design": "^0.6.0"
+    }
 }

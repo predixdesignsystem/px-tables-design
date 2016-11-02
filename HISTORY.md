@@ -1,3 +1,8 @@
+
+v0.3.19
+==================
+* patch test
+
 v0.3.18
 ==============================
 * added more details to 'use it in your project'
