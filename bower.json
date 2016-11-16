@@ -1,6 +1,6 @@
 {
     "name": "px-tables-design",
-    "version": "0.3.22",
+    "version": "0.3.23",
     "authors": [
         "General Electric",
         "Harry Roberts <harry@csswizardry.com>"
@@ -17,7 +17,7 @@
     "ignore": [
         "**/.*",
         "npm-debug.log",
-        "Gruntfile.js",
+        "gulpfile.js",
         "node_modules",
         "bower_components",
         "OSS_Notice.pdf",

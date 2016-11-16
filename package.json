@@ -1,6 +1,6 @@
 {
     "name": "px-tables-design",
-    "version": "0.3.22",
+    "version": "0.3.23",
     "description": "Basic table styles for Predix Experience",
     "private": false,
     "scripts": {
