@@ -25,7 +25,7 @@ $inuit-table-border-style       : solid !default;
 /// Border color
 /// @group px-tables-design:variables:style
 /// @type Color [default]
-$inuit-table-border-color       : $gray4 !default;
+$inuit-table-border-color       : var(--px-table-border-color, $gray4) !default;
 
 /// Enable tables with fixed width columns?
 /// @group px-tables-design:variables:flag
