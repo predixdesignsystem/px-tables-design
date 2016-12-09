@@ -1,6 +1,7 @@
 v1.0.1
 ==================
 * Move to style modules to demos
+
 v1.0.0
 ==================
 * Bringing back css vars major
