@@ -1,3 +1,7 @@
+v1.1.2
+==================
+* Fix color design dependency
+
 v1.1.1
 ==================
 * Update missed design depndencies
