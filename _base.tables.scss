@@ -57,6 +57,12 @@ $inuit-enable-table--rows       : false !default;
 /// @type Boolean [default]
 $inuit-enable-table--columns    : false !default;
 
+
+/// Enable tables with text alignment in headers
+/// @group px-tables-design:variables:style
+/// @type String [default]
+$inuit-table-header-text-align  : left !default;
+
 /// Default table
 .#{$inuit-table-namespace}table,
 %#{$inuit-table-namespace}table {
@@ -69,7 +75,7 @@ $inuit-enable-table--columns    : false !default;
       padding: $inuit-base-spacing-unit--small;
   }
   th {
-    text-align: left;
+    text-align: $inuit-table-header-text-align;
   }
 }
 
