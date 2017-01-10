@@ -1,4 +1,8 @@
-v1.1.2
+v1.1.4
+==================
+* merge PR #2 for header alignment
+
+v1.1.3
 ==================
 * Fix color design dependency
 

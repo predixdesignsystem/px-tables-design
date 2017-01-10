@@ -2,16 +2,16 @@
     {
         "description": "Default table\n",
         "commentRange": {
-            "start": 60,
-            "end": 60
+            "start": 66,
+            "end": 66
         },
         "context": {
             "type": "css",
-            "name": ".#",
-            "value": "$inuit-table-namespace",
+            "name": ".#{$inuit-table-namespace}table,\n%#{$inuit-table-namespace}table",
+            "value": "width: 100%;\n  border-collapse: collapse;\n  border-spacing: 0;\n  th,\n  td {\n      border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;\n      padding: $inuit-base-spacing-unit--small;\n  }\n  th {\n    text-align: $inuit-table-header-text-align;\n  }",
             "line": {
-                "start": 61,
-                "end": 157
+                "start": 68,
+                "end": 163
             }
         },
         "group": [
@@ -266,7 +266,7 @@
         "context": {
             "type": "variable",
             "name": "inuit-table-border-color",
-            "value": "$gray4",
+            "value": "var(--px-table-border-color, $gray4)",
             "scope": "default",
             "line": {
                 "start": 28,
@@ -277,6 +277,32 @@
             "px-tables-design:variables:style"
         ],
         "type": "Color [default]",
+        "access": "public",
+        "file": {
+            "path": "_base.tables.scss",
+            "name": "_base.tables.scss"
+        }
+    },
+    {
+        "description": "Enable tables with text alignment in headers\n",
+        "commentRange": {
+            "start": 61,
+            "end": 63
+        },
+        "context": {
+            "type": "variable",
+            "name": "inuit-table-header-text-align",
+            "value": "left",
+            "scope": "default",
+            "line": {
+                "start": 64,
+                "end": 64
+            }
+        },
+        "group": [
+            "px-tables-design:variables:style"
+        ],
+        "type": "String [default]",
         "access": "public",
         "file": {
             "path": "_base.tables.scss",
