@@ -1,3 +1,7 @@
+v1.1.5
+==================
+* changing ghp.sh to account for Alpha releases
+
 v1.1.4
 ==================
 * merge PR #2 for header alignment
