@@ -1,3 +1,7 @@
+v1.1.8
+==================
+* update ghp.sh to bower install px-dark-demo-theme
+
 v1.1.7
 ==================
 * update demo page using px-demo classes
