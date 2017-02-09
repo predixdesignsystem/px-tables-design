@@ -1,3 +1,7 @@
+v1.1.9
+==================
+* remove sassdoc.json from bower ignore
+
 v1.1.8
 ==================
 * update ghp.sh to bower install px-dark-demo-theme

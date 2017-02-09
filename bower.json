@@ -1,6 +1,6 @@
 {
   "name": "px-tables-design",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "authors": [
     "General Electric",
     "Harry Roberts <harry@csswizardry.com>"
@@ -27,8 +27,7 @@
     "wct.conf.json",
     "test",
     "OSS_Notice.pdf",
-    "*.png",
-    "sassdoc.json"
+    "*.png"
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",
