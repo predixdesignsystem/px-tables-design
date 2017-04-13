@@ -1,3 +1,7 @@
+v2.0.0-prerelease
+==================
+* updated dependencies for design refresh
+
 v1.1.9
 ==================
 * remove sassdoc.json from bower ignore
