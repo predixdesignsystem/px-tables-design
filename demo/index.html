@@ -49,12 +49,12 @@
   option-name="Borders"
   choose-with="dropdown"
   choices='[
-    "all (default)",
-    "rows",
+    "rows (default)",
     "columns",
-    "none"
+    "none",
+    "all"
   ]'
-  default-choice="all (default)">
+  default-choice="rows (default)">
 </px-sass-doc-option>
 
 <!-- 3: Make HTML Demo -->
@@ -110,17 +110,15 @@
 <table class="table table--large"></table>
 
 
-<!-- Table Rows -->
-<!-- Table with no column borders, just row borders -->
-<table class="table table--rows"></table>
-
-
 <!-- Table Columns -->
 <!-- Table with no row broders, just column borders -->
 <table class="table table--columns"></table>
 
+<!-- Table with Cells -->
+<!-- Table with all borders (row & column) -->
+<table class="table table--cells"></table>
 
-<!-- Table No Cells -->
+<!-- Table with No Cells -->
 <!-- Table with no borders at all -->
 <table class="table table--no-cells"></table>
 ```
@@ -160,7 +158,7 @@
       if (opts.Padding === "small")    strings.push("table--small");
       if (opts.Padding === "large")    strings.push("table--large");
       if (opts.Widths === "fixed")     strings.push("table--fixed");
-      if (opts.Borders === "rows")     strings.push("table--rows");
+      if (opts.Borders === "all")      strings.push("table--cells");
       if (opts.Borders === "columns")  strings.push("table--columns");
       if (opts.Borders === "none")     strings.push("table--no-cells");
 
@@ -173,7 +171,7 @@
       if (opts.Padding === "small")    strings.push("$inuit-enable-table--small : true;");
       if (opts.Padding === "large")    strings.push("$inuit-enable-table--large : true;");
       if (opts.Widths === "fixed")     strings.push("$inuit-enable-table--fixed : true;");
-      if (opts.Borders === "rows")     strings.push("$inuit-enable-table--rows : true;");
+      if (opts.Borders === "all")      strings.push("$inuit-enable-table--cells : true;");
       if (opts.Borders === "columns")  strings.push("$inuit-enable-table--columns : true;");
       if (opts.Borders === "none")     strings.push("$inuit-enable-table--no-cells : true;");
 

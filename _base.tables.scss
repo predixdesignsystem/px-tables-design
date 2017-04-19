@@ -25,7 +25,12 @@ $inuit-table-border-style       : solid !default;
 /// Border color
 /// @group px-tables-design:variables:style
 /// @type Color [default]
-$inuit-table-border-color       : var(--px-table-border-color, $gray4) !default;
+$inuit-table-border-color       : var(--px-table-border-color, $gray10) !default;
+
+/// Separator (interior border) color
+/// @group px-tables-design:variables:style
+/// @type Color [default]
+$inuit-table-separator-color    : var(--px-table-separator-color, $gray5) !default;
 
 /// Enable tables with fixed width columns?
 /// @group px-tables-design:variables:flag
@@ -47,15 +52,15 @@ $inuit-enable-table--large      : false !default;
 /// @type Boolean [default]
 $inuit-enable-table--no-cells   : false !default;
 
-/// Enable tables with row borders but no column borders?
-/// @group px-tables-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-table--rows       : false !default;
-
 /// Enable tables with column borders but no row borders?
 /// @group px-tables-design:variables:flag
 /// @type Boolean [default]
 $inuit-enable-table--columns    : false !default;
+
+/// Enable tables with column borders but no row borders?
+/// @group px-tables-design:variables:flag
+/// @type Boolean [default]
+$inuit-enable-table--cells      : false !default;
 
 
 /// Enable tables with text alignment in headers
@@ -69,13 +74,23 @@ $inuit-table-header-text-align  : left !default;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  th,
-  td {
-      border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
-      padding: $inuit-base-spacing-unit--small;
+  th, td {
+    padding: 12px;
   }
   th {
     text-align: $inuit-table-header-text-align;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $gray10;
+    font-weight: normal;
+    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
+  }
+  td {
+    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;
+    border-top: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;
+  }
+  tr:last-of-type td {
+    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
   }
 }
 
@@ -110,42 +125,32 @@ $inuit-table-header-text-align  : left !default;
   }
 }
 
-/// Table with no column borders, just row borders
-@if ($inuit-enable-table--rows == true) {
-  .#{$inuit-table-namespace}table--rows,
-  %#{$inuit-table-namespace}table--rows {
-      &,
-      th,
-      td {
-          border: 0 $inuit-table-border-style $inuit-table-border-color;
+/// Table with no row borders, just column borders
+@if ($inuit-enable-table--columns == true) {
+  .#{$inuit-table-namespace}table--columns,
+  %#{$inuit-table-namespace}table--columns {
+      &, th, td, tr:last-of-type td {
+          border: 0;
       }
   }
-  .#{$inuit-table-namespace}table--rows,
-  %#{$inuit-table-namespace}table--rows {
-      border-top-width: $inuit-table-border-width;
-      th,
-      td {
-          border-bottom-width: $inuit-table-border-width;
+  .#{$inuit-table-namespace}table--columns,
+  %#{$inuit-table-namespace}table--columns {
+      border-left: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
+      th, td, tr:last-of-type td {
+        border-right: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;
+      }
+      td:last-of-type, th:last-of-type, tr:last-of-type td:last-of-type {
+        border-right: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
       }
   }
 }
 
-/// Table with no row broders, just column borders
-@if ($inuit-enable-table--columns == true) {
-  .#{$inuit-table-namespace}table--columns,
-  %#{$inuit-table-namespace}table--columns {
-      &,
-      th,
-      td {
-          border: 0 $inuit-table-border-style $inuit-table-border-color;
-      }
-  }
-  .#{$inuit-table-namespace}table--columns,
-  %#{$inuit-table-namespace}table--columns {
-      border-left-width: $inuit-table-border-width;
-      th,
-      td {
-          border-right-width: $inuit-table-border-width;
+/// Table with all borders (both row and column)
+@if ($inuit-enable-table--cells == true) {
+  .#{$inuit-table-namespace}table--cells,
+  %#{$inuit-table-namespace}table--cells {
+      &, th, td, tr:last-of-type td {
+          border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
       }
   }
 }
@@ -154,8 +159,7 @@ $inuit-table-header-text-align  : left !default;
 @if ($inuit-enable-table--no-cells == true) {
   .#{$inuit-table-namespace}table--no-cells,
   %#{$inuit-table-namespace}table--no-cells {
-      th,
-      td {
+      th, td, tr:last-of-type td {
           border: 0;
       }
   }
