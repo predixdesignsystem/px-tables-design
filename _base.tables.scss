@@ -62,7 +62,6 @@ $inuit-enable-table--columns    : false !default;
 /// @type Boolean [default]
 $inuit-enable-table--cells      : false !default;
 
-
 /// Enable tables with text alignment in headers
 /// @group px-tables-design:variables:style
 /// @type String [default]
@@ -106,10 +105,8 @@ $inuit-table-header-text-align  : left !default;
 @if ($inuit-enable-table--small == true) {
   .#{$inuit-table-namespace}table--small,
   %#{$inuit-table-namespace}table--small {
-
-      th,
-      td {
-          padding: $inuit-base-spacing-unit--tiny;
+      th, td {
+        padding: $inuit-base-spacing-unit--tiny;
       }
   }
 }
@@ -118,9 +115,8 @@ $inuit-table-header-text-align  : left !default;
 @if ($inuit-enable-table--large == true) {
   .#{$inuit-table-namespace}table--large,
   %#{$inuit-table-namespace}table--large {
-      th,
-      td {
-          padding: $inuit-base-spacing-unit;
+      th, td {
+        padding: $inuit-base-spacing-unit;
       }
   }
 }
@@ -130,7 +126,7 @@ $inuit-table-header-text-align  : left !default;
   .#{$inuit-table-namespace}table--columns,
   %#{$inuit-table-namespace}table--columns {
       &, th, td, tr:last-of-type td {
-          border: 0;
+        border: 0;
       }
   }
   .#{$inuit-table-namespace}table--columns,
@@ -149,8 +145,11 @@ $inuit-table-header-text-align  : left !default;
 @if ($inuit-enable-table--cells == true) {
   .#{$inuit-table-namespace}table--cells,
   %#{$inuit-table-namespace}table--cells {
-      &, th, td, tr:last-of-type td {
-          border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
+      td, tr:last-of-type td {
+        border: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;
+      }
+      &, th {
+        border: 0;
       }
   }
 }
@@ -160,7 +159,7 @@ $inuit-table-header-text-align  : left !default;
   .#{$inuit-table-namespace}table--no-cells,
   %#{$inuit-table-namespace}table--no-cells {
       th, td, tr:last-of-type td {
-          border: 0;
+        border: 0;
       }
   }
 }
