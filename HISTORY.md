@@ -1,9 +1,6 @@
-v2.0.0-prerelease-1
+v2.0.0
 ==================
 * implement redesign
-
-v2.0.0-prerelease
-==================
 * updated dependencies for design refresh
 
 v1.1.9
