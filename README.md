@@ -6,7 +6,7 @@ The Predix UI Tables module has some useful helpers for common `<table>` pattern
 
 ## Dependencies
 
-The px-tables-design module depends on two other Px modules:
+The `px-tables-design` module depends on two other Px modules:
 
 * [px-colors-design](https://github.com/PredixDev/px-colors-design)
 * [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
@@ -49,4 +49,4 @@ These classes are available if the variable flags listed above are set to `true`
 * `table--columns`: add borders only to `table`’s columns.
 * `table--no-cells`: remove borders around a `table`.
 
-View the full API [here](http://predixdev.github.io/px-tables-design/sassdoc/)
+View the full API [here](http://predixdev.github.io/px-tables-design/sassdoc/).
