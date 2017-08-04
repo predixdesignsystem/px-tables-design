@@ -6,7 +6,7 @@
 <link rel="import" href="../css/px-tables-design-demo-styles.html" />
 
 <!-- Demo DOM module -->
-<dom-module id="local-element-demo">
+<dom-module id="px-tables-design-demo">
   <template>
     <!-- 0: Import the styles-->
     <style include="px-tables-design-demo-styles" is="custom-style"></style>
@@ -132,7 +132,7 @@
 <!-- 6: Handle selectedOptions, update demo -->
 <script>
   Polymer({
-    is: 'local-element-demo',
+    is: 'px-tables-design-demo',
 
     attached : function(){
       var boundHandler = this._handleOptionsUpdated.bind(this);
