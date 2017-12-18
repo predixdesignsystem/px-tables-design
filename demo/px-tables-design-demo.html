@@ -24,7 +24,7 @@
   selected-options="{{selectedOptions}}">
 
 <!-- 2: Set Options -->
-<px-sass-doc-option
+<px-sass-doc-option slot="options"
   option-name="Padding"
   choose-with="dropdown"
   choices='[
@@ -35,7 +35,7 @@
   default-choice="regular (default)">
 </px-sass-doc-option>
 
-<px-sass-doc-option
+<px-sass-doc-option slot="options"
   option-name="Widths"
   choose-with="dropdown"
   choices='[
@@ -45,7 +45,7 @@
   default-choice="regular (default)">
 </px-sass-doc-option>
 
-<px-sass-doc-option
+<px-sass-doc-option slot="options"
   option-name="Borders"
   choose-with="dropdown"
   choices='[
@@ -58,7 +58,7 @@
 </px-sass-doc-option>
 
 <!-- 3: Make HTML Demo -->
-<section data-slot="demoHTML">
+<section slot="demo-html">
 <table class$="{{tableClasses}}">
   <tbody>
     <tr>
@@ -84,12 +84,12 @@
 </section>
 
 <!-- 4: Set Import Slot -->
-<section data-slot="import">
+<section slot="import">
 {{importCode}}
 </section>
 
 <!-- 5: Set Usage HTML -->
-<section data-slot="usage">
+<section slot="usage">
 ```
 <!-- Default table -->
 <table class="table"></table>
