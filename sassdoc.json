@@ -2,16 +2,16 @@
     {
         "description": "Default table\n",
         "commentRange": {
-            "start": 76,
-            "end": 76
+            "start": 92,
+            "end": 92
         },
         "context": {
             "type": "css",
             "name": ".#{$inuit-table-namespace}table,\n%#{$inuit-table-namespace}table",
             "value": "width: 100%;\n  border-collapse: collapse;\n  border-spacing: 0;\n  th, td {\n    padding: 12px;\n  }\n  th {\n    text-align: $inuit-table-header-text-align;\n    text-transform: uppercase;\n    font-size: 12px;\n    color: $gray10;\n    font-weight: normal;\n    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;\n  }\n  td {\n    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;\n    border-top: $inuit-table-border-width $inuit-table-border-style $inuit-table-separator-color;\n  }\n  tr:last-of-type td {\n    border-bottom: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;\n  }",
             "line": {
-                "start": 78,
-                "end": 172
+                "start": 94,
+                "end": 188
             }
         },
         "group": [
@@ -26,8 +26,8 @@
     {
         "description": "Enable tables with fixed width columns?\n",
         "commentRange": {
-            "start": 40,
-            "end": 42
+            "start": 56,
+            "end": 58
         },
         "context": {
             "type": "variable",
@@ -35,8 +35,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 43,
-                "end": 43
+                "start": 59,
+                "end": 59
             }
         },
         "group": [
@@ -52,8 +52,8 @@
     {
         "description": "Enable tables with small cell padding?\n",
         "commentRange": {
-            "start": 45,
-            "end": 47
+            "start": 61,
+            "end": 63
         },
         "context": {
             "type": "variable",
@@ -61,8 +61,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 48,
-                "end": 48
+                "start": 64,
+                "end": 64
             }
         },
         "group": [
@@ -78,8 +78,8 @@
     {
         "description": "Enable tables with large cell padding?\n",
         "commentRange": {
-            "start": 50,
-            "end": 52
+            "start": 66,
+            "end": 68
         },
         "context": {
             "type": "variable",
@@ -87,8 +87,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 53,
-                "end": 53
+                "start": 69,
+                "end": 69
             }
         },
         "group": [
@@ -104,8 +104,8 @@
     {
         "description": "Enable tables with no borders?\n",
         "commentRange": {
-            "start": 55,
-            "end": 57
+            "start": 71,
+            "end": 73
         },
         "context": {
             "type": "variable",
@@ -113,8 +113,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 58,
-                "end": 58
+                "start": 74,
+                "end": 74
             }
         },
         "group": [
@@ -130,8 +130,8 @@
     {
         "description": "Enable tables with column borders but no row borders?\n",
         "commentRange": {
-            "start": 60,
-            "end": 62
+            "start": 76,
+            "end": 78
         },
         "context": {
             "type": "variable",
@@ -139,8 +139,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 63,
-                "end": 63
+                "start": 79,
+                "end": 79
             }
         },
         "group": [
@@ -156,8 +156,8 @@
     {
         "description": "Enable tables with column borders but no row borders?\n",
         "commentRange": {
-            "start": 65,
-            "end": 67
+            "start": 81,
+            "end": 83
         },
         "context": {
             "type": "variable",
@@ -165,8 +165,8 @@
             "value": "false",
             "scope": "default",
             "line": {
-                "start": 68,
-                "end": 68
+                "start": 84,
+                "end": 84
             }
         },
         "group": [
@@ -182,8 +182,8 @@
     {
         "description": "Prepend value for all generated classes\n",
         "commentRange": {
-            "start": 10,
-            "end": 13
+            "start": 26,
+            "end": 29
         },
         "context": {
             "type": "variable",
@@ -191,8 +191,8 @@
             "value": "$inuit-namespace",
             "scope": "default",
             "line": {
-                "start": 14,
-                "end": 14
+                "start": 30,
+                "end": 30
             }
         },
         "group": [
@@ -211,8 +211,8 @@
     {
         "description": "Border width\n",
         "commentRange": {
-            "start": 16,
-            "end": 19
+            "start": 32,
+            "end": 35
         },
         "context": {
             "type": "variable",
@@ -220,8 +220,8 @@
             "value": "1px",
             "scope": "default",
             "line": {
-                "start": 20,
-                "end": 20
+                "start": 36,
+                "end": 36
             }
         },
         "group": [
@@ -240,8 +240,8 @@
     {
         "description": "Border style\n",
         "commentRange": {
-            "start": 22,
-            "end": 25
+            "start": 38,
+            "end": 41
         },
         "context": {
             "type": "variable",
@@ -249,8 +249,8 @@
             "value": "solid",
             "scope": "default",
             "line": {
-                "start": 26,
-                "end": 26
+                "start": 42,
+                "end": 42
             }
         },
         "group": [
@@ -269,8 +269,8 @@
     {
         "description": "Border color\n",
         "commentRange": {
-            "start": 28,
-            "end": 31
+            "start": 44,
+            "end": 47
         },
         "context": {
             "type": "variable",
@@ -278,8 +278,8 @@
             "value": "var(--px-table-border-color, $gray10)",
             "scope": "default",
             "line": {
-                "start": 32,
-                "end": 32
+                "start": 48,
+                "end": 48
             }
         },
         "group": [
@@ -298,8 +298,8 @@
     {
         "description": "Separator (interior border) color\n",
         "commentRange": {
-            "start": 34,
-            "end": 37
+            "start": 50,
+            "end": 53
         },
         "context": {
             "type": "variable",
@@ -307,8 +307,8 @@
             "value": "var(--px-table-separator-color, $gray5)",
             "scope": "default",
             "line": {
-                "start": 38,
-                "end": 38
+                "start": 54,
+                "end": 54
             }
         },
         "group": [
@@ -327,8 +327,8 @@
     {
         "description": "Enable tables with text alignment in headers\n",
         "commentRange": {
-            "start": 70,
-            "end": 73
+            "start": 86,
+            "end": 89
         },
         "context": {
             "type": "variable",
@@ -336,8 +336,8 @@
             "value": "left",
             "scope": "default",
             "line": {
-                "start": 74,
-                "end": 74
+                "start": 90,
+                "end": 90
             }
         },
         "group": [
